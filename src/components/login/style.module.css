@@ -1,0 +1,123 @@
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #EDF1F5;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.logoDiv{
+    background: #1D242E;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDiv{
+    background: #EDF1F5;
+    height: 70vh;
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.header{
+    width: 100%;
+    /* background-color: #; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 5px 2px 10px 0 #1A1A1A;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%;
+    background-color: yellow; */
+}
+.search{
+    background: none;
+    width: 100%;
+}
+.loginBtn{
+    width: fit-content;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2px 0 16px 0 ;
+}
+.inputFieldDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 357px;
+}
+@media (max-width: 650px) {
+    .inputDiv .inputFieldDiv{
+        width: fit-content;
+    }
+}
+.icon{
+    position: absolute;
+    right: 14px;
+}
+.inputDiv label{
+    color: #28374B;
+    font-size: 11.8px;
+    font-weight: 500;
+}
+.inputFieldDiv input{
+    border: none;
+    box-shadow: 0 0 0 1px #878787;
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+}
+.searchFieldDiv input{
+    box-shadow: none;
+    background-color: #e91429;
+}
+.inputFieldDiv input::placeholder{
+    color: #6A6A6A;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.continue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginBtn:disabled{
+    background-color: red;
+    /* background-color: rgb(0, 0, 0, 0.5); */
+    opacity: 0.3;
+    filter: blur();
+    filter: brightness(10);
+}
+.error{
+    margin: auto;
+    text-align: center;
+    background-color: #e91429;
+    color: #ffffff;
+    padding: 10px;
+    width: 90%;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
