@@ -87,6 +87,10 @@
     border-radius: 4px;
     font-family: "Inter", sans-serif;
 }
+.inputFieldDiv input:focus{
+    border: none;
+    outline: none;
+}
 .searchFieldDiv input{
     box-shadow: none;
     background-color: #e91429;

@@ -123,7 +123,7 @@ export const LoginDiv = () => {
 }
 export const LogoDiv = () => {
     return (
-        <div><Logo /></div>
+        <div ><Logo /></div>
     )
 }
 
